@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CountDown</title>
+    <title>DocMode Webinar Assignment</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/7bc2a2c594.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -18,7 +18,6 @@
     </header>
 
     <section class="count">
-        <!-- <p>Hurry Up !</p> -->
         <div class="countdown">
             <div id="day">NA</div>
             <div id="hour">NA</div>
@@ -32,8 +31,8 @@
     <section class="main_container">
         <div class="container">
             <header>
-                <h2>Health Tip Webinar</h2>
-                <p>5<sup>th</sup> September 2020 at 12:00 PM</p>
+                <h2>Health Webinar</h2>
+                <p>5<sup>th</sup> September 2020 at&nbsp;12:00&nbsp;PM</p>
             </header>
 
             <div class="content">
@@ -41,9 +40,9 @@
                     <p class="message">
                         Safety Tips at Public places during <span>COVID</span>&nbsp;pandemic
                     </p>
-                    <p class="description">Join the interactive Webinar on Safety steps and Health advice to fight the
+                    <p class="description">Join the free interactive Webinar on Safety steps and Health advice to fight the
                         global COVID pandemic by Dr. Ayongo Annan </p>
-                    <button class="btn btn-primary">Register for Free</button>
+                    <button id="register" class="btn btn-primary">Register Now</button>
                 </article>
                 <aside>
                     <img src="./images/doc.png" alt="">
@@ -63,6 +62,45 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Modal Window for Registeration form -->
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Registeration Form</h2>
+            </div>
+            <div class="modal-body">
+                <form id="" action="" method="">
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" name="fullname" placeholder="Enter Full Name" required>
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" name="email" placeholder="Enter Email Id" autofocus
+                            required>
+                        <div class="phone">
+                            <select name="">
+                                <option value="">+91</option>
+                                <option value="">+11</option>
+                                <option value="">+81</option>
+                            </select>
+                            <input type="tel" placeholder="987453278" name="mobile" placeholder="978954321" required
+                                pattern="[0-9]{10}" title="Mobile number should have ten digits">
+                        </div>
+                        <i class="fas fa-lock icon"></i>
+                        <input class="input-field" type="password" name="password" placeholder="Enter Password"
+                            required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" value="Submit" class="btn btn-primary"><br>
+            </div>
+        </div>
+
+    </div>
 
 
 
