@@ -470,7 +470,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
         margin-top: 20px;
     }
     .modal-content {
-        width: 350px;
+        width: 330px;
     }
     .modal-body {
         padding: 30px 20px 0;
