@@ -13,6 +13,10 @@ function newYear() {
     var h = Math.floor((gap % (day)) / (hour));
     var m = Math.floor((gap % (hour)) / (minute));
     var s = Math.floor((gap % (minute)) / (second));
+    if(d <= 0 && h <= 0 && m <= 0 && s <= 0 ) {
+        return;
+        clearInterval(timer)
+    }
 
     document.getElementById('day').innerText = d;
     document.getElementById('hour').innerText = h;
@@ -20,7 +24,7 @@ function newYear() {
     document.getElementById('second').innerText = s;
 }
 
-setInterval(function () {
+var timer = setInterval(function () {
     newYear();
 }, 1000)
 
